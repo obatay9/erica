@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="oro.css" rel="stylesheet" />
+        <script defer src="./bank.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 class="kill">Step 1: <h1> 
+                <h2>
+                 Please fill-out all the fillable forms below. (Asterisk (*) indicates required field)
+                Note: To qualify for membership, you must be at least 18 years old.</h2>
+            </div>
+            <div class="header1">
+                <h2>Personal Information</h2>
+            </div>
+            <form class="form">
+                <div class="form-control">
+                    <lable for="lastname" name="lastname">Last Name</lable>
+                    <input id="lastname" type="text" name="lastname" placeholder="Enter Last Name" />
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <lable for="firstname" name="firstname">First Name</lable>
+                    <input id="firstname" type="firstname" name="firstname" />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <lable for="middlename" name="middlename">Middle Name</lable>
+                    <input id="middlename" type="middlename" name="middlename" />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <lable for="other" name="other">Other Name (Optional)</lable>
+                    <input id="other" type="other" name="other" />
+                </div>
+
+                <div class="form-control">
+                <label for="start">Start date:</label>
+                <input type="date" id="start" name="trip-start" value="2023-03-23" min="2023-01-01" max="2024-12-31" required/>
+                </div>
+
+                 <div class="form-control">
+                    <lable for="region" name="region">Region</lable>
+                    <input id="region" type="region" name="region" required="" />
+                    <small>Error Message</small>
+                </div>
+
+                 <div class="form-control">
+                    <lable for="citizenship" name="citizenship">citizenship</lable>
+                    <input id="citizenship" type="citizenship" name="citizenship" required="" />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <lable for="status" name="status">Civil status</lable>
+                    <select name="status" id="status">
+                    <option>Civil status</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Separated</option>
+                    <option>Widowed</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <lable for="sex" name="sex">Sex/Gender</lable>
+                    <select name="sex" id="sex">
+                    <option>Sex/Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    
+                    </select>
+                </div>
+
+
+                <div class="form-control">
+                    <lable for="municipal" name="municipal">Municipality/City Of Birth</lable>
+                    <input id="municipal" type="municipal" name="municipal" />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <lable for="birth" name="birth">Country of Birth</lable>
+                    <input id="birth" type="birth" name="birth" />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <lable for="person" name="person">Are you a person with Disability?</lable>
+                    <select name="person" id="person">
+                    <option>Select Yes/No</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <button>Register</button>
+                </div>
+            </form>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
